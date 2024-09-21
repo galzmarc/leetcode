@@ -3,6 +3,7 @@ public class MaxArea {
     int max = Integer.MIN_VALUE;
     int p1 = 0, p2 = height.length - 1;
     while (p1 < p2) {
+      // Area is given by the min of the heights * base
       int area = Math.min(height[p1], height[p2]) * (p2 - p1);
       if (area > max) {
         max = area;
@@ -15,5 +16,5 @@ public class MaxArea {
       }
     };
     return max;
-}
+  }
 }
