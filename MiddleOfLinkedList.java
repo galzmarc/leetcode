@@ -13,9 +13,9 @@ public class MiddleOfLinkedList {
     // Using fast and slow pointers
     ListNode p1 = head, p2 = head;
 
-    while (p2 != null && p2.next.next != null) {
-      p1 = p1.next;
-      p2 = p2.next.next;
+    while (p2 != null && p2.next != null) {
+        p1 = p1.next;
+        p2 = p2.next.next;
     }
     return p1;
   }
