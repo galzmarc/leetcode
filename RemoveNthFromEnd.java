@@ -21,7 +21,7 @@ class Solution {
       if (r == null) {
           return head.next;
       }
-      // keep going until r pinter reaches the end of the list
+      // keep going until r pointer reaches the end of the list
       while (r.next != null) {
           l = l.next;
           r = r.next;
